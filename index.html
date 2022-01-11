@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>カレンダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calendar_holder" >
+    <label>
+        <input id="input_date" type="text" placeholder="Datepicker" onclick="datepicker_on()">
+    </label>
+</div>
+
+<!--カレンダー　start--------------------------------------------->
+<div class="container">
+    <header>
+        <div id="year" class="year"></div>
+        <div id="mon" class="mon"></div>
+    </header>
+    <div class="btn">
+        <button class="back" onclick="back()">‹</button>
+        <button class="next" onclick="next()">›</button>
+    </div>
+    <main>
+        <table>
+            <tr>
+                <th>日</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th>土</th>
+            </tr>
+        </table>
+        <div id="calendar" class="calendar"></div>
+
+    </main>
+</div>
+<!--カレンダー　END--------------------------------------------->
+
+
+<!--monthWindow　start--------------------------------------------->
+<div class="monthWindow">
+    <header id="monthHeader">
+
+    </header>
+    <div class="btn">
+        <button class="back" onclick="monthWindow_year_back()">‹</button>
+        <button class="next" onclick="monthWindow_year_next()">›</button>
+    </div>
+    <div id="monthList"></div>
+</div>
+<!--monthWindow　END--------------------------------------------->
+
+
+<!--yearWindow　start--------------------------------------------->
+<div class="yearWindow">
+    <header id="yearHeader">
+
+    </header>
+    <div class="btn">
+        <button class="back" onclick="yearWindow_year_back()">‹</button>
+        <button class="next" onclick="yearWindow_year_next()">›</button>
+    </div>
+    <div id="yearWindow_yearList"></div>
+</div>
+
+
+<!--yearWindow　END--------------------------------------------->
+
+
+<script type="text/javascript" src="calendar.js"></script>
+</body>
+</html>
+
+

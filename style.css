@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #606060;
+    vertical-align: text-bottom;
+}
+
+.calendar_holder{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 440px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    background-color: #f8edd2;
+    /*position: relative;*/
+}
+main{
+    padding-bottom: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+header div{
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+.btn{
+    padding: 8px 0;
+}
+
+.back{
+    margin-right: 149px;
+    padding: 0 20px;
+}
+.next{
+    margin-left: 149px;
+    padding: 0 20px;
+}
+
+table{
+    margin: 0 auto;
+
+}
+
+.container table,tr,th,td{
+    border-collapse: collapse;
+    border:1px solid #bbbbbb;
+    font-size: 20px;
+    padding: 4px 18px;
+}
+
+.container td:hover{
+    background-color: #d1d2d0;
+    border-radius: 50%;
+}
+
+
+#lastDays{
+    opacity: 0.5;
+}
+#firstDays{
+    opacity: 0.5;
+}
+#sun{
+    color: #fd5f5f;
+}
+
+#sat{
+    color: #4abbff;
+}
+
+.year{
+    margin-right: 40px;
+}
+
+.year:hover{
+    opacity: 0.5;
+    cursor : pointer;
+}
+
+.month:hover{
+    opacity: 0.5;
+    cursor : pointer;
+}
+
+.monthWindow {
+    width: 440px;
+    /*margin: 20px auto 0 auto;*/
+    text-align: center;
+    background-color: #f8edd2;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.month_year:hover{
+    opacity: 0.5;
+    cursor : pointer;
+}
+
+.monthWindow_year:hover{
+    opacity: 0.5;
+    cursor : pointer;
+}
+
+.monthWindow table,tr,th,td{
+    border: 0 none;
+}
+
+.monthWindow td:hover{
+    opacity: 0.5;
+    cursor : pointer;
+}
+
+.month{
+    display: flex;
+    justify-content: space-around;
+}
+
+.yearWindow {
+    width: 440px;
+    /*margin: 20px auto 0 auto;*/
+    text-align: center;
+    background-color: #f8edd2;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.yearList_year:hover{
+    opacity: 0.5;
+    cursor : pointer;
+}
+
+.year_row {
+    display: flex;
+}
+
+#yearList:hover {
+    opacity: 0.5;
+    cursor : pointer;
+}
